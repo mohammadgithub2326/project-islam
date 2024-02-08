@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <nav class="p2_nav_bar"></nav>
+    <button class="nav-page" id="home" onclick="home_page()">HOME</button>
+
+    <form class="login-form">
+        <div class="login-heading">
+            <h3 id="login-heading">
+                <bold><u>login</u></bold>
+            </h3>
+        </div>
+        <section class="labels-inputs">
+            <div class="fname">
+                <label for="value-fname" class="label-fname">first-name:</label>
+                <input type="text" autocomplete="on" required placeholder="enter your first name" name="fname"
+                    id="value-fname" class="input-fname">
+            </div>
+            <div class="lname">
+
+                <label for="value-lname" class="label-lname">last-name:</label>
+                <input type="text" autocomplete="on" placeholder="enter your input-lname" required name="lname"
+                    id="value-lname" class="input-lname">
+
+            </div>
+            <div class="age">
+
+                <label for="value-age" class="label-age">Age:</label>
+                <input type="text" required autocomplete="on" placeholder="enter your age" name="age" id="value-age"
+                    class="input-age">
+
+            </div>
+            <div class="email">
+
+                <label for="value-email" class="label-email"> email:</label>
+                <input type="email" required autocomplete="on" placeholder="enter your email" name="email"
+                    id="value-email" class="input-email">
+            </div>
+            <div class="submit">
+                <input type="button" onclick="submit_login()" value="submit" class="input-submit">
+            </div>
+            <div class="login-for-admin" id="whole-text-and-links">
+                <p class="adimpage" id="redirecting-link">
+                    if your are admin
+                    <a onclick="window.location.href='admin_login.html'" class="page-link">
+                        <span
+                            style="color: rgb(33, 71, 240); width: 50px;margin-left: 3px;padding-left: 2px; padding-right: 10px; height: 30px;">
+                            <u class="underline">
+                                login-here
+                            </u>
+                        </span>
+                    </a>
+                </p>
+            </div>
+        </section>
+        <section class="login-success">
+            <p id="login_note"></p>
+
+        </section>
+
+
+    </form>
+    </main>
+</body>
+
+</html>

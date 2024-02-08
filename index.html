@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT~ISLAM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="heading"><img src="heading-background-sticker.png" alt="site-logo" class="branding" id="site-logo">
+            <h1 id="heading">PROJECT~ISLAM <SUB id="LOCATION">GUNTAKAL</SUB></h1>
+        </div>
+    </header>
+    <nav class="nav-bar">
+        <DIV class="menu-icone"><img src="icone-menu.svg" alt="main-menu" id="menu-icone"></DIV>
+        <div class="nav-pages">
+            <button class="nav-page" id="home" onclick="home_page()">HOME</button>
+            <button class="nav-page" id="finder">FIND-MASQUE</button>
+            <button class="nav-page" id="CALCULATOR">ZAKAT-CALCULATOR</button>
+            <button class="nav-page" id="TIMINGS">PRAYER-TIMINGS</button>
+        </div>
+        <div class="authentication">
+            <div class="login"><button class="login-items" onclick="login()" id="login-button">login</button></div>
+        </div>
+    </nav>
+    <main>
+        <label for="masjid">find-masjid</label>
+        <select name="masjid" id="choose-masjid">
+            <optgroup label="deoband-maslaq">
+                <option>
+                    masjid-e-zaithoon
+                </option>
+                <option>
+                    masjid-e-zahoor
+                </option>
+                <option>
+                    masjid-e-fatima
+                </option>
+                <option>
+                    masjid-e-ibraheem </option>
+                <option>
+                    masjid-e-quba </option>
+                <option>
+                    masjid-e-dr.hasan
+                </option>
+            </optgroup>
+            <optgroup label="barelli-maslaq">
+                <option>
+                    masjid-e-mominabaad
+                </option>
+                <option>
+                    masjid-e-makkah
+                </option>
+                <option>
+                    masjid-e-madina
+                </option>
+                <option>
+                    masjid-e-khajagareeb nawaz
+                </option>
+                <option>
+                    masjid-e-asra
+                </option>
+                <option>
+                    masjid-e-noorani
+                </option>
+                <option>
+                    masjid-e-bilal
+                </option>
+            </optgroup>
+            <optgroup label="ahle-hadees-maslaq">
+                <option>
+                    masjid-e-abdur-rahman
+                </option>
+                <option>
+                    masjid-e-markaz
+                </option>
+            </optgroup>
+        </select>
+    </main>
+</body>
+
+</html>
